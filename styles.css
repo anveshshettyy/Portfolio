@@ -1,23 +1,22 @@
-
 @font-face {
     font-family: head;
     src: url(Fonts/ppn.ttf);
 }
 @font-face {
     font-family: med;
-    src: url(../Fonts/med.ttf);
+    src: url(Fonts/med.ttf);
 }
 @font-face {
     font-family: thin;
-    src: url(../Fonts/thin.ttf);
+    src: url(Fonts/thin.ttf);
 }
 @font-face {
     font-family: book;
-    src: url(../Fonts/book.ttf);
+    src: url(Fonts/book.ttf);
 }
 @font-face {
     font-family: equal;
-    src: url(../Fonts/Marzan.ttf)
+    src: url(Fonts/Marzan.ttf)
 }
 
 body{
