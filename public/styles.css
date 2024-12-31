@@ -1,0 +1,183 @@
+
+@font-face {
+    font-family: head;
+    src: url(../Fonts/ppn.ttf);
+}
+@font-face {
+    font-family: med;
+    src: url(../Fonts/med.ttf);
+}
+@font-face {
+    font-family: thin;
+    src: url(../Fonts/thin.ttf);
+}
+@font-face {
+    font-family: book;
+    src: url(../Fonts/book.ttf);
+}
+@font-face {
+    font-family: equal;
+    src: url(../Fonts/Marzan.ttf)
+}
+
+body{
+   scroll-behavior: smooth;
+}
+
+.cursor {
+    transition: all linear 0.1s;
+    mix-blend-mode: difference;
+    position: fixed;
+    
+}
+.heading {
+    transform: translateY(0px);
+    opacity: 1;
+    animation: fadeUp  1s ease-out;
+    
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.quote {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease ;
+}
+.quote.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.page2 {
+    margin-top: -10px;
+}
+
+.marquee{
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap; 
+    white-space: nowrap; 
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+.circle{
+    border-radius: 0%;
+    flex-shrink: 0;
+}
+
+.board{
+    animation: float 5s ease-out infinite;
+}
+@keyframes float {
+    50% {
+        transform: translateY(10px);
+    }
+    
+}
+.cursor1 {
+    transition: all linear 0.1s;
+    
+    
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    transition: all linear 0.2s;
+    transform: translateX(-50%);
+}
+
+.hh {
+    mix-blend-mode: difference;
+}
+
+
+
+.cards {
+    display: flex;
+    width: 500vw; 
+    height: 100vh;
+}
+  
+.cards > div {
+    flex: 0 0 100vw; 
+}
+
+.container {
+    overflow-x: hidden; 
+    scroll-snap-type: x mandatory; 
+  }
+  
+  .container > .wrapper-404 {
+    scroll-snap-align: start; 
+  }
+
+  .w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
+ } 
+
+ .hover-underline-animation {
+   display: inline-block;
+   position: relative;
+   color: white;
+ }
+ 
+ .hover-underline-animation:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: white;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .hover-underline-animation:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
+
+
+ .hover-underline-animation-black {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation-black:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation-black:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* npx tailwind -i ./src/input.css -o ./public/style.css --watch */
