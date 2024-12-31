@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: head;
-    src: url(../Fonts/ppn.ttf);
+    src: url(/Fonts/ppn.ttf);
 }
 @font-face {
     font-family: med;
