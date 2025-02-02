@@ -226,14 +226,14 @@ gsap.to(".contact", {
 
 gsap.to(".footertext", {
   y : "0%",
-  duration:3,
+  duration:1,
   ease: "power1.out",
   scrollTrigger: {
     trigger: ".footer",
     scroller: ".main",
     start: "top 80%",
     end: "top 60%",
-    scrub:3
+    repeat : false
   }
 });
 

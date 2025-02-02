@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <script>
+        function checkDevice() {
+            if (window.innerWidth <= 768) {  
+                window.location.href = "https://www.google.com";  
+            }
+        }
+        checkDevice();
+        window.addEventListener("resize", checkDevice);  
+    </script>
+    
 </head>
 
 <body>
@@ -19,40 +30,45 @@
         <div class="h-[60px] w-full px-14">
             <div class=" h-full w-full flex  items-center justify-between font-[med]">
                 <h1 class="inline-block ">Anvesh Shetty</h1>
-                <button class="z-[999] hover-underline-animation-black duration-1000">CONTACT</button>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shettyanvesh86@gmail.com" target="_blank" class="z-[999] hover-underline-animation-black duration-1000">CONTACT</a>
             </div>
         </div>
-        <div class="page1 w-full relative mb-[100px] ">
-            <div class="  flex  justify-evenly items-center   ">
-                <a class="font-[thin] hover:underline cursor-pointer duration-700 z-[999] "
+
+        <!--------------------------PAGE 1 ------------------------>
+
+        <div class="page1 max-w-full relative mb-[100px] md:mb-[100px]">
+            <div class="flex justify-evenly items-center">
+                <a class="font-[thin] hover:underline cursor-pointer duration-700 z-[999]"
                     href="www.google.com">LinkedIn</a>
-                <div class="  mt-[100px] flex items-center justify-center  ">
-                    <div class="text-[17vh] font-[head]  head gap-0  ">
-                        <h1 class=" ml-[170px] ">CREATIVE</h1>
-                        <h1 class="-mt-16">WEB DEVELOPER</h1>
+                <div class="mt-[100px] md:mt-[100px] md:flex md:items-center md:justify-center">
+                    <div class=" md:text-[17vh] text-[17vh]  font-[head] head gap-0">
+                        <h1 class="ml-[170px] md:ml-[170px]">CREATIVE</h1>
+                        <h1 class="-mt-16 md:-mt-16">WEB DEVELOPER</h1>
                     </div>
                 </div>
                 <h1 class="font-[thin] hover:underline cursor-pointer z-[999]">Instagram</h1>
             </div>
-            <div class="w-full h-[80vh]  flex">
-                <div class=" w-[200px] ml-[70px] mt-[20px] ">
-                    <div class="h-[1px] w-full bg-black"></div>
-                    <h1 class="text-[5vh] ">UI,UX</h1>
-                    <div class="h-[1px] w-full bg-black"></div>
-                    <h1 class="text-[5vh]">& WEB</h1>
-                    <div class="h-[1px] w-full bg-black"></div>
-                    <h1 class="text-[5vh]">DESIGN</h1>
-                    <div class="h-[1px] w-full bg-black"></div>
-                    <p class="mt-[10px] font-[book]">Hi, I'm Anvesh Shetty,<br> A web developer and designer passionate
+            <div class="max-w-full min-h-[80vh] md:min-h-[80vh] flex">
+                <div class="max-w-[200px] md:max-w-[200px] ml-[70px] md:ml-[70px] mt-[20px] md:mt-[20px]">
+                    <div class="h-[1px] max-w-full bg-black"></div>
+                    <h1 class="text-[5vh] md:text-[5vh]">UI,UX</h1>
+                    <div class="h-[1px] max-w-full bg-black"></div>
+                    <h1 class="text-[5vh] md:text-[5vh]">& WEB</h1>
+                    <div class="h-[1px] max-w-full bg-black"></div>
+                    <h1 class="text-[5vh] md:text-[5vh]">DESIGN</h1>
+                    <div class="h-[1px] max-w-full bg-black"></div>
+                    <p class="mt-[10px] md:mt-[10px] font-[book]">Hi, I'm Anvesh Shetty,<br> A web developer and designer passionate
                         about creating dynamic, user-centric digital experiences. </p>
-
                 </div>
-                <div class=" quote w-[70%] ml-32">
-                    <p class="text-[10vh] font-[thin] mt-[200px] leading-tight">"Creativity is the code that turns
+                <div class="quote  max-w-[70%] md:max-w-[70%] ml-32 md:ml-32">
+                    <p class="text-[10vh] md:text-[10vh] font-[thin] mt-[200px] md:mt-[200px] leading-tight ">"Creativity is the code that turns
                         imagination into reality, and each line is a stroke in the art of digital expression."</p>
                 </div>
             </div>
         </div>
+
+        <!--------------------------PAGE 2 ------------------------>
+
         <div class="page2 ">
 
             <div class="h-[30vh] w-full bg-black py-[30px] overflow-hidden ">
@@ -164,6 +180,10 @@
             </div>
         </div>
 
+
+        <!--------------------------PAGE 3 ------------------------>
+
+
         <div class="page3 w-full relative   ">
             <div class="h-[20vh] group w-full bg-black p-3 flex items-center gap-3">
                 <h1 class="text-[12vh] flex items-center text-white z-[99] hh  font-[head]">Crafting Tools</h1>
@@ -220,6 +240,9 @@
                 </div>
             </div>
         </div>
+
+        <!--------------------------PAGE 4 ------------------------>
+
         <div class="page4 w-full h-[150vh]  px-20 relative overflow-x-hidden">
             <div class="h-[100vh] w-full bg-[F1F1F1]">
                 <div class="h-[20vh] absolute mt-[20vh] ml-[10px] z-[99] w-full ">
@@ -321,6 +344,11 @@
 
             </div>
         </div>
+
+
+
+        <!--------------------------PAGE 5 ------------------------>
+
         <div class="page5 w-full  relative -mt-[30px]">
             <div class="container w-full h-[100vh] sticky top-0 ">
                 <div class="wrapper-404 absolute top-0 left-0 will-change-transform">
@@ -471,8 +499,8 @@
                                 <div class="w-[26vw]  h-full"></div>
                             </div>
                             
-                            <div class="h-[50vh]  mt-[40vh]  ">
-                                <div class="h-[50vh] w-[50px] bg-green-300 absolute -mt-[50px] right-[0px]"></div>
+                            <div class="h-[50vh]  mt-[40vh]   ">
+                                
                                 
                                 <div class="h-[200px] w-[400px] border border-black cursor-pointer hover:h-[300px] hover:w-[600px]  group  absolute -mt-[250px] duration-300 ">
                                     <div class="absolute group-hover:opacity-0 h-[60px] w-[200px] shadow-[0px_-4px_10px_rgba(0,0,0,0.25)] flex items-center justify-around bg-white border rounded-full z-[999] mt-[165px] -right-[30px] "> 
@@ -484,6 +512,13 @@
                                         </div>
                                     </div>
                                     <video class="h-full w-full object-cover " autoplay loop muted src="videos/SwiggyCloneVideo.mp4"></video>
+                                </div>
+
+
+                                <div class="h-[200px] bg-green-500 w-[400px] border border-black cursor-pointer hover:h-[300px] hover:w-[600px]  group  absolute -mt-[250px] duration-300  right-[250px]"></div>
+
+                                <div class="h-[200px] w-[420px] border group bg-green-400 border-black cursor-pointer  absolute mt-[190px]  hover:h-[300px] hover:w-[640px] hover:mt-[80px] duration-300">
+                                    
                                 </div>
 
 
@@ -503,7 +538,9 @@
                                     <h1 class=" z-[99] -mt-[10px]  text-[8vh] font-[head]">CLONE</h1>
                                     <h1 class=" text-[5h] -mt-[10px] -ml-[10px]  ">PROJECTS USING REACT & API</h1>
                                 </div>
+                                
                             </div>
+                            
                         </div>
 
                     </div>
@@ -512,6 +549,9 @@
         </div>
 
         <div class="h-[20vh] w-full bg-black"></div>
+
+        <!--------------------------PAGE 6 ------------------------>
+
 
         <div class="page6 h-[105vh] w-full border-t-2 flex  ">
             <div class="h-full w-[55vh] py-2 ">
@@ -622,9 +662,10 @@
         </div>
 
 
+        <!--------------------------PAGE 7 ------------------------>
 
 
-        <div class="page6 h-[140vh] w-full border border-black relative py-10 ">
+        <div class="page7 h-[140vh] w-full border border-black relative py-10 ">
             <div class="h-[15vh] w-full  px-[11.5vh] flex  relative  ">
                 <div class=" h-[15vh] border-2 border-black  flex items-center py-2 px-4">
                     <div class="">
@@ -714,7 +755,7 @@
                         <div class="h-[35vh] w-[50%]  ">
                             <div class="h-[6vh] flex items-center gap-x-2  w-full ">
                                 
-                                <h1 class="text-[3vh] font-[book] cursor-pointer  hover-underline-animation text-white">Gmail &nbsp;
+                                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=shettyanvesh86@gmail.com" class="text-[3vh] font-[book] cursor-pointer  hover-underline-animation text-white">Gmail &nbsp;
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -730,11 +771,11 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                                 
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Github 
+                                <a target="_blank" href="https://github.com/anveshshettyy" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Github 
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -750,10 +791,10 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">LinkedIn
+                                <a target="_blank" href="https://linkedin.com/in/anvesh-a-shetty-716b05251" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">LinkedIn
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -769,10 +810,10 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Discord
+                                <a target="_blank" href="https://discordapp.com/users/760461254774489159" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Discord
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -788,10 +829,10 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">NextLvl
+                                <a target="_blank" href="" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">NextLvl
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -807,12 +848,12 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                         </div>
                         <div class="h-[35vh] w-[50%]  ">
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Instagram
+                                <a target="_blank" href="https://instagram.com/anveshshettyy" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Instagram
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -828,10 +869,10 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Upwork 
+                                <a target="_blank" href="https://www.upwork.com/freelancers/~014843d8ed1df37513" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Upwork 
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -847,10 +888,10 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                             <div class="h-[6vh] flex items-center  w-full ">
-                                <h1 class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Fiverr
+                                <a target="_blank" href="https://www.fiverr.com/anveshshettyy?up_rollout=true" class="text-[3vh] font-[book] cursor-pointer inline-block hover-underline-animation text-white">Fiverr
                                     <div class="h-[1.8vh] w-[1.8vh] inline-block ">
                                         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
                                             <defs>
@@ -866,7 +907,7 @@
                                             </g>
                                           </svg>
                                     </div>
-                                </h1>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -883,8 +924,6 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-
     <script src="script.js"></script>
 </body>
 
