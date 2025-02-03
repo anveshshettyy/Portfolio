@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
     <script>
@@ -22,7 +23,11 @@
 </head>
 
 <body>
-    
+    <div id="preloader" class="fixed inset-0 h-full w-full bg-black flex flex-col justify-center items-center z-[9999]">
+        <div class="h-[50%] w-[50%]">
+            <video class="h-full w-full object-cover rounded-lg " autoplay muted src="videos/loader.mp4"></video>
+        </div>
+    </div>
     
     <div class="cursor pointer-events-none mt-[-5px] ml-[-5px] z-[9999] h-[15px] w-[15px] fixed bg-black  "></div>
     <div class=" main  bg-[#F1F1F1]  text-black  ">
@@ -193,7 +198,7 @@
             </div>
             <div class="h-[100vh]  w-[100%] bg-black   ">
 
-                <div class=" box-container1 h-[20%] w-full border relative  group border-b-white  flex items-center ">
+                <div class=" box-container1 h-[20%] w-full border relative  group border-b-white z-[1]  flex items-center ">
                     <h1 class="text-[10vh] font-[med] text-white z-[99] hh ml-[15px]">Figma</h1>
                     <div class="h-full w-full absolute overflow-hidden">
                         <div class="h-full w-full bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
@@ -205,37 +210,38 @@
                 <div class="h-[20%] w-full border border-b-white flex items-center relative group   box-container2 ">
                     <h1 class="text-[10vh] font-[med] text-white z-[99] hh ml-[15px]">Adobe Illustrator</h1>
                     <div class="h-full w-full absolute overflow-hidden">
-                        <div class="h-full w-full bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
+                        <div class="h-full w-full bg-white z-[1] left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
                     </div>
                     <div class="h-[30vh] w-[50vh] overflow-visible opacity-0 absolute duration-500 bg-slate-400 rounded-3xl box2">
-                        <img class="h-full w-full object-cover rounded-3xl" src="images/js.gif" alt="">
+                        <img class="h-full w-full object-cover rounded-3xl" src="images/adobe.gif" alt="">
                     </div>
                 </div>
-                <div class="h-[20%] w-full border border-b-white flex items-center group relative  box-container3 ">
-                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">React</h1>
+                <div class="h-[20%] w-full border border-b-white flex z-[1] items-center group relative  box-container3 ">
+                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">GSAP</h1>
                     <div class="h-full w-full absolute overflow-hidden">
-                        <div class="h-full w-full bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
+                        <div class="h-full w-full bg-white left-[50%] z-[1] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
                     </div>
-                    <div class="h-[30vh] w-[50vh]  bg-slate-400 opacity-0 absolute duration-500 rounded-3xl box3">
-                        <img class="h-full w-full object-cover rounded-3xl" src="images/ReactJs.jpg" alt="">
+                    <div class="h-[30vh] w-[50vh] z-[999] border gsap overflow-visible bg-[#0B0F0B] opacity-0 absolute duration-500 rounded-3xl box3">
+                        <img class="h-full w-full object-contain rounded-3xl" src="images/gsap.gif" alt="">
                     </div>
                 </div>
-                <div class="h-[20%] w-full border border-b-white flex items-center  group relative box-container4 ">
-                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">Tailwind</h1>
+
+                <div class="h-[20%] w-full border border-b-white z-[1] flex items-center  group relative box-container4 ">
+                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">Three JS</h1>
                     <div class="h-full w-full absolute overflow-hidden">
-                        <div class="h-full w-full bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
+                        <div class="h-full w-full bg-white z-[1] left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
                     </div>
-                    <div class="h-[30vh] w-[50vh]  bg-slate-400 opacity-0 absolute duration-500 rounded-3xl box4">
-                        <img class="h-full w-full object-cover rounded-3xl" src="images/FigmaGif.gif" alt="">
+                    <div class="h-[30vh] w-[50vh] z-50  bg-slate-400 opacity-0 absolute duration-500 rounded-3xl box4 border">
+                        <img class="h-full w-full object-cover rounded-3xl" src="images/threejs.gif" alt="">
                     </div>
                 </div>
                 <div class="h-[20%] w-full border border-b-white flex items-center group relative  box-container5">
-                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">Node Js</h1>
+                    <h1 class="text-[10vh] font-[med] text-white z-[99] hh   ml-[15px]">MERN Stack</h1>
                     <div class="h-full w-full absolute overflow-hidden">
                         <div class="h-full w-full bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[50%] group-hover:translate-y-[-50%] absolute group-hover:h-[100%] transition-all ease-linear duration-300"></div>
                     </div>
                     <div class="h-[30vh] w-[50vh]  bg-slate-400 opacity-0 absolute duration-500 rounded-3xl box5">
-                        <img class="h-full  w-full object-cover rounded-3xl" src="images/nodeJs.gif" alt="">
+                        <img class="h-full  w-full object-cover rounded-3xl" src="images/js.gif" alt="">
                     </div>
                 </div>
             </div>
@@ -515,10 +521,28 @@
                                 </div>
 
 
-                                <div class="h-[200px] bg-green-500 w-[400px] border border-black cursor-pointer hover:h-[300px] hover:w-[600px]  group  absolute -mt-[250px] duration-300  right-[250px]"></div>
+                                <div class="h-[200px]  w-[420px] flex items-center hover:h-[300px] hover:w-[600px]   border border-black cursor-pointer group absolute -mt-[250px] duration-300  right-[250px]">
+                                    <div class="absolute group-hover:opacity-0 h-[60px] w-[200px] shadow-[0px_-4px_10px_rgba(0,0,0,0.25)] flex items-center justify-around bg-white border rounded-full z-[999] mt-[165px] -ml-[30px] "> 
+                                        <div class="h-[45px] w-[45px]  rounded-full bg-white border border-zinc-600">
+                                            <img class="h-full w-full object-contain rounded-full" src="images/InvTrack_Logo.png" alt="">
+                                        </div>
+                                        <div class="h-[50px] w-[130px] ">
+                                            <p class="relative text-[10px]">InvTrack : Simplifying Inventory, Maximizing Efficiency.</p>
+                                        </div>
+                                    </div>
+                                    <video class="h-full w-full object-cover " autoplay loop muted src="videos/InvTrack.mp4"></video>
+                                </div>
 
-                                <div class="h-[200px] w-[420px] border group bg-green-400 border-black cursor-pointer  absolute mt-[190px]  hover:h-[300px] hover:w-[640px] hover:mt-[80px] duration-300">
-                                    
+                                <div class="h-[200px] w-[400px] border group bg-green-400 border-black cursor-pointer  absolute mt-[190px]  hover:h-[300px] hover:w-[640px] hover:mt-[80px] duration-300">
+                                    <div class="absolute group-hover:opacity-0 h-[60px] w-[200px] shadow-[0px_-4px_10px_rgba(0,0,0,0.25)] flex items-center justify-around bg-white border rounded-full z-[999] -mt-[30px]  -right-[30px]  "> 
+                                        <div class="h-[45px] w-[45px]  rounded-full bg-white border border-zinc-600">
+                                            <img class="h-1/2 w-1/2 object-fill rounded-full" src="images/chatverse.png" alt="">
+                                        </div>
+                                        <div class="h-[50px] w-[130px] ">
+                                            <p class="relative text-[10px]">ChatVerse: Connecting Conversations, One Message at a Time.</p>
+                                        </div>
+                                    </div>
+                                    <video class="h-full w-full object-cover " autoplay loop muted src="videos/ChatVerse.mp4"></video>
                                 </div>
 
 
@@ -533,10 +557,23 @@
                                     </div>
                                     <video class="h-full w-full object-cover " autoplay loop muted src="videos/OchiVideo.mp4"></video>
                                 </div>
-                                <div class="h-[60%]   ml-[75vh] mt-[10px]  w-[250px] font-[med] ">
-                                    <h1 class="text-[5h] ml-[30px]  ">SOME OF THE</h1>
-                                    <h1 class=" z-[99] -mt-[10px]  text-[8vh] font-[head]">CLONE</h1>
-                                    <h1 class=" text-[5h] -mt-[10px] -ml-[10px]  ">PROJECTS USING REACT & API</h1>
+                                <div class="h-[30vh] flex justify-between ml-[75vh] mt-[10px] w-[150vh] font-[med] ">
+                                    <div class="">
+                                        <h1 class="text-[5h] ml-[30px]  ">SOME OF THE</h1>
+                                        <h1 class=" z-[99] -mt-[10px]  text-[8vh] -ml-[30vh] font-[head]">CLONE & MERN STACK</h1>
+                                        <h1 class=" text-[5h] -mt-[10px] -ml-[10px]  ">PROJECTS USING REACT & API</h1>
+                                    </div>
+                                    <div class="h-full w-[5vh] bg-black ">
+                                        <div class="text-white ml-2 mt-2">
+                                            <p>G</p>
+                                            <p>O</p>
+                                            <p>&nbsp</p>
+                                            <p>D</p>
+                                            <p>O</p>
+                                            <p>W</p>
+                                            <p>N</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -550,10 +587,10 @@
 
         <div class="h-[20vh] w-full bg-black"></div>
 
-        <!--------------------------PAGE 6 ------------------------>
+        <!--------------------------PAGE 6 ------------------------>;
 
 
-        <div class="page6 h-[105vh] w-full border-t-2 flex  ">
+        <div class="page6 h-[105vh] w-full border-t-2 flex   ">
             <div class="h-full w-[55vh] py-2 ">
                 <div class=" ">
                     <div class="h-[10vh]  flex-row items-center p-4 mb-8">
@@ -665,7 +702,7 @@
         <!--------------------------PAGE 7 ------------------------>
 
 
-        <div class="page7 h-[140vh] w-full border border-black relative py-10 ">
+        <div class="page7 h-[140vh] w-full border border-black relative py-10  ">
             <div class="h-[15vh] w-full  px-[11.5vh] flex  relative  ">
                 <div class=" h-[15vh] border-2 border-black  flex items-center py-2 px-4">
                     <div class="">
@@ -744,7 +781,7 @@
             
             <div class="h-[40vh] footer w-full bg-black z-[99999] rounded-t-3xl absolute  top-[100vh] flex items-center justify-evenly">
                 <div class="h-[22vh] w-[77%]  footer  flex items-center justify-center overflow-hidden">
-                    <h1 class="font-[equal] text-[28vh] leading-tight text-[#F1F1F1] footertext translate-y-[20vh]  ">#UNTILNEXT!</h1>
+                    <h1 class="font-[equal] text-[28vh] leading-tight text-[#F1F1F1] footertext   ">#UNTILNEXT!</h1>
                 </div>
 
                 <div class="h-[40vh]   px-5 w-[20%] ">
@@ -924,6 +961,14 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Keep the loader for 5 seconds
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("content").classList.remove("hidden");
+        }, 10000); // 5000ms = 5 seconds
+    </script>
     <script src="script.js"></script>
 </body>
 
