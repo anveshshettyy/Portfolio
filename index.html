@@ -25,7 +25,7 @@
 <body>
     <div id="preloader" class="fixed inset-0 h-full w-full bg-black flex flex-col justify-center items-center z-[9999] text-white">
         <div class="h-[50%] w-[50%] flex flex-col items-center justify-center">
-            <h1 id="loading-text">Loading... 0%</h1>
+            <h1 id="loading-text" class="text-white font-[med] text-[10vh]">0%</h1>
         </div>
     </div>
     
@@ -972,7 +972,7 @@
         function updateLoading() {
             if (loadProgress < 100) {
                 loadProgress++;
-                loadingText.innerText = `Loading... ${loadProgress}%`;
+                loadingText.innerText = `${loadProgress}%`;
                 setTimeout(updateLoading, 20); // Adjust speed of counting
             }
         }
@@ -981,7 +981,7 @@
     
         window.addEventListener("load", () => {
             loadProgress = 100;
-            loadingText.innerText = `Loading... 100%`;
+            loadingText.innerText = `100%`;
     
             gsap.to("#preloader", { opacity: 0, duration: 1, onComplete: () => {
                 document.getElementById("preloader").style.display = "none";
