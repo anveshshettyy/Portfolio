@@ -231,9 +231,9 @@ gsap.to(".footertext", {
   scrollTrigger: {
     trigger: ".footer",
     scroller: ".main",
-    start: "top 80%",
-    end: "top 60%",
-    repeat : false
+    start: "top 90%",
+    end: "top 70%",
+    repeat : false,
   }
 });
 
