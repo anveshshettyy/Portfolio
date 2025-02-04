@@ -25,7 +25,8 @@
 <body>
     <div id="preloader" class="fixed inset-0 h-full w-full bg-black flex flex-col justify-center items-center z-[9999]">
         <div class="h-[50%] w-[50%]">
-            <video class="h-full w-full object-cover rounded-lg " autoplay muted src="videos/loader.mp4"></video>
+            <!-- <video class="h-full w-full object-cover rounded-lg " autoplay muted src="videos/loader.mp4"></video> -->
+             <h1>Loading...</h1>
         </div>
     </div>
     
@@ -966,11 +967,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script>
-        // Keep the loader for 5 seconds
-        setTimeout(() => {
-            document.getElementById("preloader").style.display = "none";
-            document.getElementById("content").classList.remove("hidden");
-        }, 10000); // 5000ms = 5 seconds
+        window.addEventListener("load", () => {
+            gsap.to("#preloader", { opacity: 0, duration: 1, onComplete: () => {
+                document.getElementById("preloader").style.display = "none";
+                gsap.fromTo("#content", { opacity: 0 }, { opacity: 1, duration: 1 });
+            }});
+        });
     </script>
     <script src="script.js"></script>
 </body>
