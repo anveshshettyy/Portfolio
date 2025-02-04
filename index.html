@@ -23,10 +23,9 @@
 </head>
 
 <body>
-    <div id="preloader" class="fixed inset-0 h-full w-full bg-black flex flex-col justify-center items-center z-[9999]">
-        <div class="h-[50%] w-[50%]">
-            <!-- <video class="h-full w-full object-cover rounded-lg " autoplay muted src="videos/loader.mp4"></video> -->
-             <h1>Loading...</h1>
+    <div id="preloader" class="fixed inset-0 h-full w-full bg-black flex flex-col justify-center items-center z-[9999] text-white">
+        <div class="h-[50%] w-[50%] flex flex-col items-center justify-center">
+            <h1 id="loading-text">Loading... 0%</h1>
         </div>
     </div>
     
@@ -967,7 +966,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script>
+        let loadProgress = 0;
+        let loadingText = document.getElementById("loading-text");
+    
+        function updateLoading() {
+            if (loadProgress < 100) {
+                loadProgress++;
+                loadingText.innerText = `Loading... ${loadProgress}%`;
+                setTimeout(updateLoading, 20); // Adjust speed of counting
+            }
+        }
+    
+        updateLoading(); // Start the counter
+    
         window.addEventListener("load", () => {
+            loadProgress = 100;
+            loadingText.innerText = `Loading... 100%`;
+    
             gsap.to("#preloader", { opacity: 0, duration: 1, onComplete: () => {
                 document.getElementById("preloader").style.display = "none";
                 gsap.fromTo("#content", { opacity: 0 }, { opacity: 1, duration: 1 });
